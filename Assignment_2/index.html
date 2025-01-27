@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick Astley - Never Gonna Give You Up!</title>
+    <link rel="stylesheet" href="css/styles.css" /> <!--stylesheet link-->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" /> <!--Google Fonts for custom fonts-->
+</head>
+<body>
+    <header>
+        <h1>Rick Astley - The Legend Lives On!</h1>
+        <nav>
+            <ul>  <!--Navigation menu which brings the user to the corresponding spot on the page-->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#tour">Tour Dates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="image-container"> <!--Header images-->
+                <img src="Img/RICK_ASTLEY_NEVER+GONNA+GIVE+YOU+UP+-+REMIX-11720.jpg" alt="Small Image 1" class="small-image" />
+                <img src="Img/Rick_Astley1.webp" alt="Rick Astley Image" class="main-image" />
+                <img src="Img/RickAstley top img.jpg" alt="Small Image 2" class="small-image" />
+            </div>
+            <h2>Never Gonna Give You Up</h2>
+            <p>Welcome to the official Rick Astley fan page! This site is dedicated to all things Rick Astley. Explore his videos, learn more about him, and enjoy a gallery of his best moments.</p>
+            <button onclick="toggleLyrics()">Show Lyrics</button> <!--button to show and remove the lyrics from the page-->
+            <div id="lyrics" class="lyrics" style="display: none;">
+                <p>
+                    We're no strangers to love. You know the rules and so do I. A full commitment's what I'm thinking of. You wouldn't get this from any other guy. I just wanna tell you how I'm feeling. Gotta make you understand. Never gonna give you up. Never gonna let you down. Never gonna run around and desert you. Never gonna make you cry. Never gonna say goodbye. Never gonna tell a lie and hurt you.
+                </p>
+            </div>
+        </section>
+
+        <section id="videos">
+            <h2>Videos</h2>
+            <p>Watch the best Rick Astley performances and music videos.</p>
+            <div class="video-grid">
+                <!-- Embedded videos -->
+                <iframe width="560" height="315" src="https://www.bing.com/videos/riverview/relatedvideo?q=rick+astley&&mid=4E7B1C0F8E67E9F7B1364E7B1C0F8E67E9F7B136&FORM=VCGVRP" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.bing.com/videos/riverview/relatedvideo?q=rick+astley+live&&mid=0077469CA29705AD035F0077469CA29705AD035F&FORM=VCGVRP" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+
+        <section id="about">
+            <h2>About Rick Astley</h2>
+            <p>Rick Astley's journey as a performer began in the 1980s when he skyrocketed to fame with his debut single, "Never Gonna Give You Up." His deep, rich voice and catchy melodies quickly won over fans around the world. Despite stepping back from the music scene in the 1990s to focus on his family, Rick made a triumphant return in the early 2000s. Since then, he has embraced the resurgence of his hit song through the viral "Rickrolling" phenomenon and continues to tour and release new music. His enduring popularity is a testament to his talent, versatility, and unwavering connection with his audience.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="Img/Rick-Astley-8.jpg" alt="Rick Astley 1" /> <!--Gallery images-->
+                <img src="Img/Rick-Astley-1.jpg" alt="Rick Astley 2" />
+                <img src="Img/Rick-Astley-9.jpg" alt="Rick Astley 3" />
+            </div>
+        </section>
+
+        <section id="news">
+            <h2>Latest News</h2>
+            <p>Stay up-to-date with the latest news about Rick Astley. Check back often for updates!</p>
+            <p>Rick Astley recently lit up the Glastonbury Festival with a memorable performance, delighting fans with a mix of his classic hits and unexpected covers. Among the highlights were his renditions of Harry Styles' chart-toppers and AC/DC's rock anthems, showcasing his versatility and enduring appeal. Rick described the Glastonbury crowd as the "loveliest" he's ever performed for, a testament to the festival's magical atmosphere and the warm reception he received from fans both old and new. This performance reaffirmed Rick's status as a beloved and dynamic figure in the music world.</p>
+        </section>
+
+        <section id="tour">
+            <h2>Tour Dates</h2>
+            <p>Don't miss Rick Astley live in concert! Here are his upcoming tour dates:</p>
+            <ul>
+                <li>March 15, 2025 - London, UK</li>
+                <li>April 10, 2025 - New York, USA</li>
+                <li>May 5, 2025 - Tokyo, Japan</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rick Astley Fan Page. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleLyrics() { // Function connected to our button to toggle the lyrics
+            var lyrics = document.getElementById('lyrics');
+            if (lyrics.style.display === 'none') {
+                lyrics.style.display = 'block';
+            } else {
+                lyrics.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

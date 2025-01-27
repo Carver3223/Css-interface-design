@@ -1,0 +1,141 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2F4F4F; /*Dark background*/
+    color: #FFFFFF;
+}
+
+header {
+    background-color: #1E90FF; /*Blue background*/
+    padding: 2em 0;
+    text-align: center;
+}
+
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white; /*White text color*/
+    background-color: #FF4500; /*Orange background*/
+    padding: 0.5em;
+    border-radius: 5px; /*Rounded corners*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a:hover {
+    background-color: #FFD700; /*Changes the color of our nav bar options on hover to yellow*/
+}
+
+main {
+    padding: 2em;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+}
+
+.main-image {
+    max-width: 60%;
+    height: auto;
+}
+
+.small-image {
+    max-width: 20%;
+    height: auto;
+}
+
+section {
+    margin-bottom: 2em;
+    padding: 1em;
+    border-radius: 5px; /*Rounded corners*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*Subtle shadow*/
+    text-align: center; /*Center align text*/
+    background-size: cover;
+    background-position: center;
+}
+
+#home {
+    background-color: #FF4500; /*orange background*/
+    background-image: url('home_background.jpg'); /*background image*/
+}
+
+#videos, #gallery, #news {
+    background-color: #1E90FF; /*Blue background*/
+    background-image: url('background.jpg'); /*assumed common background for simplicity*/
+}
+
+
+#about, #tour {
+    background-color: #FF4500; /*orange background*/
+    background-image: url('about_tour_background.jpg'); /*Assumed common background for simplicity*/
+}
+
+section img, .gallery-grid img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.video-grid {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-grid {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery-grid img {
+    width: 30%; /*Uniform image width*/
+    height: auto;
+}
+
+footer {
+    background-color: #1E90FF; /*blue background*/
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.lyrics {
+    font-family: 'Courier New', monospace;
+    column-count: 3;
+    column-gap: 1em;
+    text-align: justify;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; /*remove default list style*/
+}
+
+ul li {
+    padding: 0.5em 0;
+    margin: 0.5em 0;
+    border-bottom: 1px solid #333333;
+}
